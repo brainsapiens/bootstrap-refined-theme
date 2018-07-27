@@ -4,4 +4,4 @@ Despite the fact that the title contains the word &laquo;theme&raquo;&nbsp;&mdas
 
 Theme consists of&nbsp;2&nbsp;styles: [Strict](examples/strict.html) and [Smooth](examples/smooth.html), where you can find detailed description of&nbsp;all changes with examples. Choose which styling is&nbsp;more suitable for you.
 
-The theme is building within fork from Bootstrap source code, so you can track the changes in the source code [here](https://github.com/brainsapiens/bootstrap/commits/bootstrap-refined-theme).
+The theme is building within fork of Bootstrap source code, so you can track the changes in the source code [here](https://github.com/brainsapiens/bootstrap/commits/bootstrap-refined-theme).
