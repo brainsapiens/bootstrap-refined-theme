@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/strict/bootstrap.min.css">
+
+    <title>Bootstrap Refined Theme</title>
+
+    <style>
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            -webkit-transform: translateZ(0);
+        }
+    </style>
+</head>
+<body>
+<header class="header border-bottom">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#"><img src="logo.svg" width="32" height="32" alt="Refined" class="mr-2"><span class="d-none d-md-inline">Bootstrap&nbsp;</span>Refined<span class="d-none d-md-inline">&nbsp;Theme</span></a>
+            <span class="navbar-text ml-auto">Strict<span class="d-none d-md-inline"> version</span></span>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <!-- Layout -->
+        <article class="my-5">
+            <h2>Layout</h2>
+            <hr>
+
+            <!-- Grid -->
+            <section class="my-5">
+                <h3>Grid</h3>
+
+                <div class="my-3">
+                    <b>Gutter width</b> is now multiple to <code>$spacer</code> and equals <code>($spacer * 2)</code> for through spacing consistency.
+                </div>
+            </section>
+        </article>
+
+        <!-- Content -->
+        <article class="my-5">
+            <h2>Content</h2>
+            <hr>
+
+            <!-- Reboot -->
+            <section class="my-5">
+                <h3>Reboot</h3>
+
+                <p>Included:</p>
+                <ul>
+                    <li><code>-webkit-font-smoothing: antialiased;</code></li>
+                    <li class="list-unstyled">and</li>
+                    <li><code>-moz-osx-font-smoothing: grayscale;</code></li>
+                </ul>
+                <p><em>by default</em> for better font display.</p>
+
+                <p>Changed font to <b>Roboto</b> from <a href="https://fonts.google.com/specimen/Roboto">Google Fonts</a> to support the overall <em>sharp</em> identity of the theme.</p>
+
+                <p>Also changed <span class="text-monospace">monospace font</span> to <b>Roboto Mono</b> (<a href="https://fonts.google.com/specimen/Roboto+Mono">Google Fonts</a>).</p>
+
+                <p>For the same reason, to keep identity, <em>global</em> <code>border-radius</code> is <b>disabled</b> by setting <code>$enable-rounded</code> variable to <code>false</code>.</p>
+            </section>
+
+            <!-- Tables -->
+            <section class="my-5">
+                <h3>Tables</h3>
+                <p>Striped rows (<code>.table-striped</code>) changed alternation to <code>even</code> for if the table head has appearance of <code>.thead-light</code> or <code>.thead-dark</code> the first body row's background does not "stick" to head background and alternated among themselves correctly, see the example below:</p>
+
+                <div class="my-3">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead class="thead-light">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <p>Conversely, if the table head does not contain <code>.thead-light</code> or <code>.thead-dark</code> appearance, it's okay if the alternation starts from the second row:</p>
+
+                <div class="my-3">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <!-- Components -->
+        <article class="my-5">
+            <h2>Components</h2>
+            <hr>
+
+            <!-- Alerts -->
+            <section class="my-5">
+                <h3>Alerts</h3>
+                <ul>
+                    <li>Disabled <code>border</code> for a cleaner look;</li>
+                    <li>Increased <code>padding-y</code> to visually match <code>padding-x</code>:</li>
+                </ul>
+
+                <div class="my-3">
+                    <div class="row">
+                        <div class="col-md-6 mb-1 mb-md-0">
+                            <div class="alert alert-primary" role="alert">
+                                A simple primary alert—check it out!
+                            </div>
+                            <div class="alert alert-secondary" role="alert">
+                                A simple secondary alert—check it out!
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                                A simple success alert—check it out!
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                                A simple danger alert—check it out!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-warning" role="alert">
+                                A simple warning alert—check it out!
+                            </div>
+                            <div class="alert alert-info" role="alert">
+                                A simple info alert—check it out!
+                            </div>
+                            <div class="alert alert-light" role="alert">
+                                A simple light alert—check it out!
+                            </div>
+                            <div class="alert alert-dark" role="alert">
+                                A simple dark alert—check it out!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Badge -->
+            <section class="my-5">
+                <h3>Badge</h3>
+                <p>Decreased <code>font-weight</code> to <code>normal</code> for a cleaner look:</p>
+
+                <div class="my-3">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <span class="badge badge-primary">Primary</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="badge badge-secondary">Secondary</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="badge badge-success">Success</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="badge badge-danger">Danger</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="badge badge-warning">Warning</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="badge badge-info">Info</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="badge badge-light">Light</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="badge badge-dark">Dark</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <p>Due to disabling global <code>border-radius</code>, <code>.badge-pill</code> become automatically <span class="badge badge-pill badge-warning">deprecated</span>.</p>
+            </section>
+
+            <!-- Card -->
+            <section class="my-5">
+                <h3>Card</h3>
+                <p>Card columns <code>$card-columns-gap</code> and <code>$card-columns-margin</code> changed to <code>$spacer</code> for through spacing consistency:</p>
+
+                <div class="my-3">
+                    <div class="card-columns">
+                        <div class="card">
+                            <img class="card-img-top" src="http://via.placeholder.com/261x160?text=+" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title that wraps to a new line</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                        <div class="card p-3">
+                            <blockquote class="blockquote mb-0 card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">
+                                    <small class="text-muted">
+                                        Someone famous in <cite title="Source Title">Source Title</cite>
+                                    </small>
+                                </footer>
+                            </blockquote>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="http://via.placeholder.com/261x160?text=+" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card bg-primary text-white text-center p-3">
+                            <blockquote class="blockquote mb-0">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                                <footer class="blockquote-footer text-white">
+                                    <small>
+                                        Someone famous in <cite title="Source Title">Source Title</cite>
+                                    </small>
+                                </footer>
+                            </blockquote>
+                        </div>
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img" src="http://via.placeholder.com/261x160?text=+" alt="Card image">
+                        </div>
+                        <div class="card p-3 text-right">
+                            <blockquote class="blockquote mb-0">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">
+                                    <small class="text-muted">
+                                        Someone famous in <cite title="Source Title">Source Title</cite>
+                                    </small>
+                                </footer>
+                            </blockquote>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Carousel -->
+            <section class="my-5">
+                <h3>Carousel</h3>
+                <p>Changed <b>prev/next</b> arrows for a cleaner look:</p>
+
+                <div class="my-3">
+                    <div class="row justify-content-lg-center">
+                        <div class="col-lg-9">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="http://via.placeholder.com/800x400?text=First+slide" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="http://via.placeholder.com/800x400?text=Second+slide" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="http://via.placeholder.com/800x400?text=Third+slide" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <!-- Utilities -->
+        <article class="my-5">
+            <h2>Utilities</h2>
+            <hr>
+
+            <!-- Close icon -->
+            <section class="my-5">
+                <h3>Close icon</h3>
+
+                <div class="my-3">
+                    <div class="row">
+                        <div class="col-lg-4 mb-3 mb-lg-0">
+                            <p>Reduced thickness:</p>
+                            <button type="button" class="close float-none" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3 mb-md-0">
+                            <p>Also tested for <b>Alerts</b>:</p>
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <p>And <b>Modal</b>:</p>
+                            <div class="modal position-relative d-block" tabindex="-1" role="dialog">
+                                <div class="modal-dialog m-0" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Modal body text goes here.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Colors -->
+            <section class="my-5">
+                <h3>Colors</h3>
+                <p>Bootstrap default colors are too sharp, so <code>$blue</code>, <code>$green</code>, <code>$red</code>, <code>$yellow</code> and <code>$cyan</code> colors were replaced with their softer variants using <a href="http://www.color-hex.com/color-palette/2714">Bootstrap Color Palette</a> by <a href="http://www.color-hex.com/member/lukecarter45658">lukecarter45658</a>:</p>
+
+                <div class="my-3">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <p class="text-primary py-md-3 mb-md-2">.text-primary</p>
+                            <p class="text-success py-md-3 mb-md-2">.text-success</p>
+                            <p class="text-danger py-md-3 mb-md-2">.text-danger</p>
+                            <p class="text-warning py-md-3 mb-md-2">.text-warning</p>
+                            <p class="text-info py-md-3 mb-md-2">.text-info</p>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <p class="py-md-3 mb-md-2"><a href="#" class="text-primary">Primary link</a></p>
+                            <p class="py-md-3 mb-md-2"><a href="#" class="text-success">Success link</a></p>
+                            <p class="py-md-3 mb-md-2"><a href="#" class="text-danger">Danger link</a></p>
+                            <p class="py-md-3 mb-md-2"><a href="#" class="text-warning">Warning link</a></p>
+                            <p class="py-md-3 mb-md-2"><a href="#" class="text-info">Info link</a></p>
+                        </div>
+                        <div class="col-md-6 mt-3 mt-md-0">
+                            <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+                            <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+                            <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+                            <div class="p-3 mb-2 bg-warning text-white">.bg-warning</div>
+                            <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Also <code>$yiq-contrasted-threshold</code> changed to <code>200</code> to better fit new color palette.</p>
+            </section>
+
+            <!-- Sizing -->
+            <section class="my-5">
+                <h3>Sizing</h3>
+                <p>The default sizes are extended to a <b>5% step</b>. Although this solution is bloating code a bit, it is extremely useful when you need to set the size of the table columns if the <code>12</code> columns from <b>Grid system</b> are not enough.</p>
+
+                <div class="my-3">
+                    <div class="w-5 p-3" style="background-color: #eee;">5%</div>
+                    <div class="w-10 p-3" style="background-color: #eee;">10%</div>
+                    <div class="w-15 p-3" style="background-color: #eee;">15%</div>
+                    <div class="w-20 p-3" style="background-color: #eee;">20%</div>
+                    <div class="w-25 p-3" style="background-color: #eee;">25%</div>
+                    <div class="w-30 p-3" style="background-color: #eee;">30%</div>
+                    <div class="w-35 p-3" style="background-color: #eee;">35%</div>
+                    <div class="w-40 p-3" style="background-color: #eee;">40%</div>
+                    <div class="w-45 p-3" style="background-color: #eee;">45%</div>
+                    <div class="w-50 p-3" style="background-color: #eee;">50%</div>
+                    <div class="w-55 p-3" style="background-color: #eee;">55%</div>
+                    <div class="w-60 p-3" style="background-color: #eee;">60%</div>
+                    <div class="w-65 p-3" style="background-color: #eee;">65%</div>
+                    <div class="w-70 p-3" style="background-color: #eee;">70%</div>
+                    <div class="w-75 p-3" style="background-color: #eee;">75%</div>
+                    <div class="w-80 p-3" style="background-color: #eee;">80%</div>
+                    <div class="w-85 p-3" style="background-color: #eee;">85%</div>
+                    <div class="w-90 p-3" style="background-color: #eee;">90%</div>
+                    <div class="w-95 p-3" style="background-color: #eee;">95%</div>
+                    <div class="w-100 p-3" style="background-color: #eee;">100%</div>
+                    <div class="w-auto p-3" style="background-color: #eee;">auto</div>
+                </div>
+            </section>
+
+            <!-- Spacing -->
+            <section class="my-5">
+                <h3>Spacing</h3>
+                <p>First of all, for through spacing consistency now <code>$spacer</code> is used as a <b>bottom indent</b> on all those components that it did not apply to before, namely:</p>
+                <ul>
+                    <li><code>&lt;p&gt;</code> paragraphs;</li>
+                    <li><code>.form-group</code> element;</li>
+                    <li><b>Alerts</b> component;</li>
+                    <li><b>Breadcrumb</b> component;</li>
+                    <li>Changed all HTML headings, from <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> bottom indent from <code>($spacer / 2)</code> to <code>$spacer</code>.</li>
+                </ul>
+
+                <p>The <code>4</code> size multiplier changed to <code>2</code> to maintain an equal rhythm:</p>
+
+                <div class="my-3">
+                    <code class="d-inline-block p-3 bg-light text-monospace">
+                        .p-1 { padding: ($spacer * .25) !important; }
+                        <br>
+                        .p-2 { padding: ($spacer * .5) !important; }
+                        <br>
+                        <br>
+                        .p-3 { padding: <span class="text-muted">(</span>$spacer <b class="text-muted">* 1</b><span class="text-muted">)</span> !important; }
+                        <br>
+                        .p-4 { padding: ($spacer * <del>1.5</del> <ins><b>2</b></ins> ) !important; }
+                        <br>
+                        .p-5 { padding: ($spacer * 3) !important; }
+                    </code>
+                </div>
+
+                <p>The idea is to use small sizes <code>1</code> and <code>2</code> mainly for the <em>local elements</em> (left/right spacing before/after icons, for example), and larger sizes <code>3</code>, <code>4</code> and <code>5</code> for the <em>global blocks</em> (top/bottom spacing before/after sections, for example). <small class="text-muted">This paragraph is for guidance only.</small></p>
+                <p class="small text-muted"></p>
+            </section>
+
+            <!-- CSS columns -->
+            <section class="my-5">
+                <h3><span class="badge badge-info mr-2 align-top">New</span>Added utility for <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/columns">columns</a></code> CSS property</h3>
+                <p>Up to <code>6</code> columns layout, responsive classes are available that use the same viewport width breakpoints as the grid system.</p>
+
+                <div class="my-3 p-3 p-md-5 bg-light">
+                    <p class="columns-1 mb-4 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="columns-2 mb-4 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="columns-3 mb-4 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="columns-4 mb-4 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="columns-5 mb-4 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="columns-2 columns-sm-3 columns-md-4 columns-lg-5 columns-xl-6 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </section>
+        </article>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="py-3 border-top">
+            <p class="mb-0 text-muted">&copy;&nbsp;2018 Bootstrap Refined Theme</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
